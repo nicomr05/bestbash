@@ -36,7 +36,7 @@ function proxyoff() {
 # BETTER GIT COMMANDS {{{
 bit() {
   # By helmuthdu
-  usage(){
+  usage() {
     echo "Usage: $0 [options]"
     echo "  --init                                              # Autoconfigure git options"
     echo "  a, [add] <files> [--all]                            # Add git files"
@@ -471,7 +471,7 @@ fared() {
 #}}}
 
 ## FIND AND REMOVED ALL DOTFILES {{{
-farad () {
+farad() {
   read -p "Delete all dotfiles recursively [y/N]: " OPT
   [[ $OPT == y ]] && find . -name '.*' -type f -exec rm -rf {} \;
 }
@@ -479,7 +479,7 @@ farad () {
 #}}}
 
 # ENTER AND LIST DIRECTORY{{{
-function cd() { builtin cd -- "$@" && { [ "$PS1" = "" ] || ls -hrt --color; }; }
+#function cd() { builtin cd -- "$@" && { [ "$PS1" = "" ] || ls -hrt --color; }; }
 #}}}
 
 # SYSTEMD SUPPORT {{{
@@ -516,11 +516,11 @@ mkcd() {
 #}}}
 #}}}
 # No ttyctl, so we need to save and then restore terminal settings
-vim()
-{
-  # osx users, use stty -g
-  local STTYOPTS="$(stty --save)"
-  stty stop '' -ixoff
-  command vim "$@"
-  stty "$STTYOPTS"
-}
+#vim()
+#{
+#  # osx users, use stty -g
+#  local STTYOPTS="$(stty --save)"
+#  stty stop '' -ixoff
+#  command vim "$@"
+#  stty "$STTYOPTS"
+#}

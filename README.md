@@ -1,18 +1,18 @@
-#BESTBASH: The best configuration you will ever find for bash
-##Configured for Arch Linux
-##Features
-###Colors
+# BESTBASH: The best configuration you will ever find for bash
+## Configured for Arch Linux
+## Features
+### Colors
 1. colored manpages
 2. colored outputs for many programs, like gcc, vim, etc.
 3. many more...
 
-###Aliases
+### Aliases
 1. Aliases for pacman
 2. Aliases for root-access commands
 3. Custom aliases for file, directory, and navigation command
 4. Aliases for autocolor
 
-###Functions
+### Functions
 Custom commands for super lazy people ;)
 
 1. Seting proxy on or off for  IITK intranet(Unfortunately only works for gnome settings :(  )
@@ -29,14 +29,14 @@ Custom commands for super lazy people ;)
 12. swap: swap2 filenames around
 13. dirsize: Self explanatory
 14. fared: find and remove all empty directories
-15. cd: cd with ls
+15. cd: cd with ls (deactivated)
 16. systemd support with various aliases and functions
 17. mkcd: mkdir and cd into new dir
 
-###Settings
+### Settings
 OS, Bash, Bash history, Completion, Config, Ruby, NVM, VTE, ANDROID SDK, EDITOR settings
 
-##Configuration Instructions
+## Configuration Instructions
   ```
   #clone into home
   git clone https://github.com/jaivardhankapoor/bestbash ~/.bash/

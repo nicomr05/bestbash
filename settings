@@ -13,22 +13,36 @@ _isroot=false
 # }}}
 
 
-
 # BASH OPTIONS {{{
-shopt -s cdspell                 # Correct cd typos
+#shopt -s cdspell                 # Correct cd typos
 shopt -s checkwinsize            # Update windows size on command
 shopt -s histappend              # Append History instead of overwriting file
 shopt -s cmdhist                 # Bash attempts to save all lines of a multiple-line command in the same history entry
 shopt -s expand_aliases
 shopt -s extglob                 # Extended pattern
 shopt -s no_empty_cmd_completion # No empty completion
+#}}}
+
+
 # COMPLETION {{{
+bind 'set completion-ignore-case on'
 complete -cf sudo
 if [[ -f /etc/bash_completion ]]; then
   . /etc/bash_completion
 fi
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
 #}}}
-#}}}
+
+
 # CONFIG {{{
 export PATH=/usr/local/bin:$PATH
 if [[ -d "$HOME/bin" ]] ; then
@@ -62,16 +76,20 @@ if [[ -d "/opt/android-sdk" ]]; then
   export ANDROID_HOME=/opt/android-sdk
 fi
 #}}}
+#}}}
+
 
 # EDITOR {{{
-if which vim &>/dev/null; then
-  export EDITOR="vim"
+if which nvim &>/dev/null; then
+  export EDITOR="nvim"
 elif which emacs &>/dev/null; then
   export EDITOR="emacs -nw"
 else
   export EDITOR="nano"
 fi
 #}}}
+
+
 # BASH HISTORY {{{
 # make multiple shells share the same history file
 export HISTSIZE=1000            # bash history will save N commands
