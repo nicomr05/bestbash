@@ -101,6 +101,7 @@ alias l='ls -l'
 alias activate='source ./env/bin/activate' # alias for activating venv
 alias utime='sudo ntpdate pool.ntp.org'
 alias z='zoxide'
+alias python='python3'
 #}}}
 
 # MISSPELLINGS {{{
