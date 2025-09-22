@@ -27,7 +27,6 @@ alias fman='compgen -c | fzf | xargs man'
 alias tunnel='screen -r playit.gg'
 alias listen='sudo lsof -i -P -n | grep LISTEN'
 alias open='xdg-open'
-alias tre='tree'
 #alias df='df -h'
 alias diff='colordiff'              # requires colordiff package
 alias du='du -c -h'
@@ -38,33 +37,29 @@ alias grep='grep --color=auto'
 alias more='less'
 alias nano='nano -w -_'
 #alias ping='ping -c 5'
-#alias clear='clear && fastfetch'
-alias c='clear && clear'
+alias c='clear && fastfetch'
 alias .bashrc="nvim ~/.bashrc"
-alias vimconf="nvim ~/.config/nvim/init.lua"
-alias exho='echo'
+alias vimrc="nvim ~/.config/nvim/init.lua"
 alias ip='ip -c'
 #}}}
 
 # PRIVILEGED ACCESS {{{
-if ! $_isroot; then
-  alias sudo='sudo '
-  alias scat='sudo cat'
-  alias svim='sudoedit'
-  alias root='sudo su'
-  alias reboot='sudo reboot'
-  alias halt='sudo halt'
-  alias powertop='sudo powertop'
-fi
+#alias sudo='sudo '
+alias scat='sudo cat'
+alias svim='sudoedit'
+alias root='sudo su'
+#alias reboot='sudo reboot'
+#alias halt='sudo halt'
+#alias powertop='sudo powertop'
 #}}}
 
 # PACMAN ALIASES {{{
 # we're on ARCH
 if $_isarch; then
   # we're not root
-#  if ! $_isroot; then
-#    alias pacman='sudo pacman'
-#  fi
+  if ! $_isroot; then
+    alias pacman='sudo pacman'
+  fi
   alias pacupg='pacman -Syu'            # Synchronize with repositories and then upgrade packages that are out of date on the local system.
   alias pacupd='pacman -Sy'             # Refresh of all package lists after updating /etc/pacman.d/mirrorlist
   alias pacin='pacman -S'               # Install specific package(s) from the repositories
@@ -103,11 +98,14 @@ alias utime='sudo ntpdate pool.ntp.org'
 alias z='zoxide'
 alias python='python3'
 alias jp2a='jp2a --color'
+alias kvm-unload='lsmod | grep kvm && sudo rmmod kvm_intel && sudo rmmod kvm'
 #}}}
 
 # MISSPELLINGS {{{
 alias suod='sudo'
 alias clera='clear'
 alias lcear='clear'
+alias tre='tree'
+alias exho='echo'
 #}}}
 #}}}
