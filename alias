@@ -20,8 +20,8 @@ alias tree='tree -C'
 
 # MODIFIED COMMANDS {{{
 alias ..='echo "cd .."; cd ..'
-alias ....='cd ../..'
-alias ......='cd ../../..'
+alias ....='echo "cd ../.."; cd ../..'
+alias ......='echo "cd ../../.."; cd ../../..'
 alias hl='rg --passthru'
 alias fman='compgen -c | fzf | xargs man'
 alias tunnel='screen -r playit.gg'
@@ -102,6 +102,7 @@ alias activate='source ./env/bin/activate' # alias for activating venv
 alias utime='sudo ntpdate pool.ntp.org'
 alias z='zoxide'
 alias python='python3'
+alias jp2a='jp2a --color'
 #}}}
 
 # MISSPELLINGS {{{
