@@ -39,7 +39,8 @@ alias nano='nano -w -_'
 #alias ping='ping -c 5'
 alias c='clear && fastfetch'
 alias .bashrc="nvim ~/.bashrc"
-alias vimrc="nvim ~/.config/nvim/init.lua"
+alias .aliases="nvim ~/.bash_aliases"
+alias vimrc="cd ~/.config/nvim && nvim init.lua"
 alias ip='ip -c'
 #}}}
 
@@ -93,7 +94,7 @@ alias l='ls -l'
 #}}}
 
 # MISC {{{
-alias activate='source ./env/bin/activate' # alias for activating venv
+alias activate='source .venv/bin/activate' # alias for activating venv
 alias utime='sudo ntpdate pool.ntp.org'
 alias z='zoxide'
 alias python='python3'
