@@ -97,7 +97,7 @@ alias l='ls -l'
 # MISC {{{
 alias activate='source .venv/bin/activate' # alias for activating venv
 alias utime='sudo ntpdate pool.ntp.org'
-alias z='zoxide'
+#alias z='zoxide'
 alias python='python3'
 alias jp2a='jp2a --color'
 alias kvm-unload='lsmod | grep kvm && sudo rmmod kvm_intel && sudo rmmod kvm'
