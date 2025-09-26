@@ -42,6 +42,10 @@ if ! shopt -oq posix; then
 fi
 #}}}
 
+# ZOXIDE
+if [ -f ~/.zoxide ]; then
+  . ~/.zoxide 
+fi
 
 # CONFIG {{{
 export PATH=/usr/local/bin:$PATH
