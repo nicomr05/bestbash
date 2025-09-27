@@ -43,8 +43,8 @@ fi
 #}}}
 
 # ZOXIDE
-if [ -f ~/.zoxide ]; then
-  . ~/.zoxide 
+if [ -f ~/.zoxiderc ]; then
+  . ~/.zoxiderc
 fi
 
 # CONFIG {{{
