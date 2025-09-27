@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 # FUNCTIONS {{{
 # SET PROXY ON OR OFF{{{
 function proxyon() {
