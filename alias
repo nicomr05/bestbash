@@ -42,6 +42,7 @@ alias c='clear && fastfetch'
 alias .bashrc="nvim ~/.bashrc"
 alias .aliases="nvim ~/.bash/alias"
 alias vimrc="cd ~/.config/nvim && nvim init.lua"
+alias dwmrc="nvim ~/.config/dwm/config.h"
 alias ip='ip -c'
 #}}}
 
