@@ -43,9 +43,9 @@ alias fastfetch='fastfetch && echo'
 alias c='clear && fastfetch'
 alias .bashrc="nvim ~/.bashrc"
 alias .aliases="nvim ~/.bash/alias"
-alias vimrc="cd ~/.config/nvim && nvim init.lua"
-alias dwmrc="nvim ~/.config/dwm/config.h"
-alias strc="nvim ~/.config/st/config.h"
+alias vimconf="cd ~/.config/nvim && nvim init.lua"
+alias dwmconf="nvim ~/.config/dwm/config.def.h"
+alias stconf="nvim ~/.config/st/config.h"
 alias ip='ip -c'
 #}}}
 
