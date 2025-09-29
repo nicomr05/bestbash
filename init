@@ -5,4 +5,4 @@ source ~/.bash/settings
 source ~/.bash/alias
 source ~/.bash/functions
 
-fastfetch
+#fastfetch
