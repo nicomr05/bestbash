@@ -39,10 +39,10 @@ alias grep='grep --color=auto'
 alias more='less'
 alias nano='nano -w -_'
 #alias ping='ping -c 5'
-alias fastfetch='fastfetch && echo'
+#alias fastfetch='fastfetch --color blue'
 alias c='clear'
 alias .bashrc="nvim ~/.bashrc"
-alias .aliases="nvim ~/.bash/alias"
+alias .aliases="nvim ~/.bash_aliases"
 alias vimconf="cd ~/.config/nvim && nvim init.lua"
 alias dwmconf="nvim ~/.config/dwm/config.def.h"
 alias stconf="nvim ~/.config/st/config.h"
