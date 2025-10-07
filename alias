@@ -105,6 +105,7 @@ alias utime='sudo ntpdate pool.ntp.org'
 alias python='python3'
 alias jp2a='jp2a --color'
 alias kvm-unload='lsmod | grep kvm && sudo rmmod kvm_intel && sudo rmmod kvm'
+alias jupyter-tunnel='ssh -L 8888:localhost:8888 nicomr@taigete-tunnel'
 #}}}
 
 # MISSPELLINGS {{{
