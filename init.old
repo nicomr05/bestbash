@@ -120,16 +120,9 @@ if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
 
-# Z-oxide
-
+# z-oxide
 if [ -f ~/.zoxiderc ]; then
   . ~/.zoxiderc
-fi
-
-bind 'set completion-ignore-case on'
-complete -cf sudo
-if [[ -f /etc/bash_completion ]]; then
-  . /etc/bash_completion
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -142,5 +135,17 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# auto-caps on
+bind 'set completion-ignore-case on'
+
+# pip completion
+_pip_completion()
+{
+    COMPREPLY=( $( COMP_WORDS="${COMP_WORDS[*]}" \
+                   COMP_CWORD=$COMP_CWORD \
+                   PIP_AUTO_COMPLETE=1 $1 2>/dev/null ) )
+}
+complete -o default -F _pip_completion pip
 
 #fastfetch

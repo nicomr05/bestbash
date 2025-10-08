@@ -39,7 +39,7 @@ alias grep='grep --color=auto'
 alias more='less'
 alias nano='nano -w -_'
 #alias ping='ping -c 5'
-#alias fastfetch='fastfetch --color blue'
+alias fastfetch='fastfetch --logo HarDClanZ'
 alias c='clear'
 alias .bashrc="nvim ~/.bashrc"
 alias .aliases="nvim ~/.bash_aliases"
@@ -106,6 +106,7 @@ alias python='python3'
 alias jp2a='jp2a --color'
 alias kvm-unload='lsmod | grep kvm && sudo rmmod kvm_intel && sudo rmmod kvm'
 alias jupyter-tunnel='ssh -L 8888:localhost:8888 nicomr@taigete-tunnel'
+alias mongosh-docker='mongosh --port 27017'
 #}}}
 
 # MISSPELLINGS {{{
