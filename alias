@@ -26,8 +26,6 @@ alias ....='echo "cd ../.."; cd ../..'
 alias ......='echo "cd ../../.."; cd ../../..'
 alias hl='rg --passthru'
 alias fman='compgen -c | fzf | xargs man'
-alias tunnel='screen -r playit.gg'
-alias listen='sudo lsof -i -P -n | grep LISTEN'
 alias open='xdg-open'
 #alias df='df -h'
 alias diff='colordiff'              # requires colordiff package
@@ -107,6 +105,19 @@ alias jp2a='jp2a --color'
 alias kvm-unload='lsmod | grep kvm && sudo rmmod kvm_intel && sudo rmmod kvm'
 alias jupyter-tunnel='ssh -L 8888:localhost:8888 nicomr@taigete-tunnel'
 alias mongosh-docker='mongosh --port 27017'
+alias listen='sudo lsof -i -P -n | grep LISTEN'
+#}}}
+
+# SERVER {{{
+alias overleaf-backup='sudo cp -r /home/nicomr/redis_data/ /home/nicomr/sharelatex_data/ /home/nicomr/mongo_data/ /mnt/disk1/'
+alias crafty-backup='sudo cp -r /DATA/AppData/crafty/backups/* /mnt/disk1/crafty/backups'
+alias crafty-optimize='sudo cp -r /home/nicomr/crafty/purpur/* .'
+
+alias casaos-update='curl -fsSL https://get.casaos.io/update | sudo bash'
+alias casaos-start='sudo systemctl start casaos-app-management.service casaos-local-storage.service casaos-user-service.service casaos-gateway.service casaos-message-bus.service && sudo systemctl start casaos'
+alias casaos-stop='sudo systemctl stop casaos-app-management.service casaos-local-storage.service casaos-user-service.service casaos-gateway.service casaos-message-bus.service && sudo systemctl stop casaos'
+
+alias tunnel='screen -r playit.gg'
 #}}}
 
 # MISSPELLINGS {{{
