@@ -39,7 +39,7 @@ alias grep='grep --color=auto'
 alias more='less'
 alias nano='nano -w -_'
 #alias ping='ping -c 5'
-alias fastfetch='fastfetch --logo HarDClanZ'
+#alias fastfetch='fastfetch --logo HarDClanZ'
 alias c='clear'
 alias .bashrc="nvim ~/.bashrc"
 alias .aliases="nvim ~/.bash_aliases"
