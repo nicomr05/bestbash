@@ -107,6 +107,7 @@ alias kvm-unload='lsmod | grep kvm && sudo rmmod kvm_intel && sudo rmmod kvm'
 alias jupyter-tunnel='ssh -L 8888:localhost:8888 nicomr@taigete-tunnel'
 alias mongosh-docker='mongosh --port 27017'
 alias listen='sudo lsof -i -P -n | grep LISTEN'
+alias public-ip='curl ifconfig.me && echo'
 #}}}
 
 # SERVER {{{
@@ -119,6 +120,7 @@ alias casaos-start='sudo systemctl start casaos-app-management.service casaos-lo
 alias casaos-stop='sudo systemctl stop casaos-app-management.service casaos-local-storage.service casaos-user-service.service casaos-gateway.service casaos-message-bus.service && sudo systemctl stop casaos'
 
 alias tunnel='screen -r playit.gg'
+alias server-awake='wakeonlan $(cat ~/.serverMAC)'
 #}}}
 
 # MISSPELLINGS {{{
