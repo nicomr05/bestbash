@@ -78,6 +78,7 @@ if $_isarch; then
   alias pacclean="pacman -Sc"           # Delete all not currently installed package files
   alias pacmake="makepkg -fcsi"         # Make package from PKGBUILD file in current directory
   alias changemirror='svim /etc/pacman.d/mirrorlist'
+  alias update-grub='grub-mkconfig -o /boot/grub/grub.cfg'
 fi
 #}}}
 
