@@ -120,7 +120,7 @@ alias casaos-start='sudo systemctl start casaos-app-management.service casaos-lo
 alias casaos-stop='sudo systemctl stop casaos-app-management.service casaos-local-storage.service casaos-user-service.service casaos-gateway.service casaos-message-bus.service && sudo systemctl stop casaos'
 
 alias tunnel='screen -r playit.gg'
-alias server-awake='wakeonlan $(cat ~/.serverMAC)'
+alias awake-server='wakeonlan $(cat ~/.serverMAC)'
 #}}}
 
 # MISSPELLINGS {{{
