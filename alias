@@ -119,6 +119,8 @@ alias crafty-optimize='sudo cp -r /home/nicomr/crafty/purpur/* .'
 alias casaos-update='curl -fsSL https://get.casaos.io/update | sudo bash'
 alias casaos-start='sudo systemctl start casaos-app-management.service casaos-local-storage.service casaos-user-service.service casaos-gateway.service casaos-message-bus.service && sudo systemctl start casaos'
 alias casaos-stop='sudo systemctl stop casaos-app-management.service casaos-local-storage.service casaos-user-service.service casaos-gateway.service casaos-message-bus.service && sudo systemctl stop casaos'
+alias casaos-enable='sudo systemctl enable casaos-app-management.service casaos-local-storage.service casaos-user-service.service casaos-gateway.service casaos-message-bus.service && sudo systemctl enable casaos'
+alias casaos-disable='sudo systemctl disable casaos-app-management.service casaos-local-storage.service casaos-user-service.service casaos-gateway.service casaos-message-bus.service && sudo systemctl disable casaos'
 
 alias tunnel='screen -r playit.gg'
 alias awake-server='wakeonlan $(cat ~/.serverMAC)'
