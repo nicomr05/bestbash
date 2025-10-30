@@ -45,6 +45,7 @@ alias vimconf="cd ~/.config/nvim && nvim init.lua"
 alias dwmconf="nvim ~/.config/dwm/config.def.h"
 alias stconf="nvim ~/.config/st/config.h"
 alias ip='ip -c'
+alias bat='batcat'
 #}}}
 
 # PRIVILEGED ACCESS {{{
@@ -121,6 +122,7 @@ alias casaos-stop='sudo systemctl stop casaos-app-management.service casaos-loca
 
 alias tunnel='screen -r playit.gg'
 alias awake-server='wakeonlan $(cat ~/.serverMAC)'
+alias mountdir='sudo mount -t nfs4 10.8.0.1:/media/nfs /media/share'
 #}}}
 
 # MISSPELLINGS {{{
