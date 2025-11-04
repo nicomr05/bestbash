@@ -92,7 +92,7 @@ fi
 # LS {{{
 alias ls='ls -hF --color=auto'
 alias lr='ls -R'                    # recursive ls
-alias lm='la | less'
+alias lm='la | bat'
 alias ll='ls -lA'
 alias la='ls -A'
 alias l='ls -l'
@@ -124,7 +124,8 @@ alias casaos-disable='sudo systemctl disable casaos-app-management.service casao
 
 alias tunnel='screen -r playit.gg'
 alias awake-server='wakeonlan $(cat ~/.serverMAC)'
-alias mountdir='sudo mount -t nfs4 10.8.0.1:/media/nfs /media/share'
+#alias mountdir='sudo mount -t nfs4 10.8.0.1:/media/nfs /media/share'
+alias mountdirs='sudo mount -a'
 #}}}
 
 # MISSPELLINGS {{{
