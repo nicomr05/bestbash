@@ -115,7 +115,7 @@ alias wg-down='sudo wg-quick down wg0'
 #}}}
 
 # SERVER {{{
-alias overleaf-backup='sudo cp -r /home/nicomr/redis_data/ /home/nicomr/sharelatex_data/ /home/nicomr/mongo_data/ /mnt/disk1/'
+alias underleaf-backup='sudo cp -r /home/nicomr/redis_data/ /home/nicomr/sharelatex_data/ /home/nicomr/mongo_data/ /mnt/disk1/'
 alias crafty-backup='sudo cp -r /DATA/AppData/crafty/backups/* /mnt/disk1/crafty/backups'
 alias crafty-optimize='sudo cp -r /home/nicomr/crafty/purpur/* .'
 
