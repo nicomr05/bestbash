@@ -100,6 +100,7 @@ alias l='ls -l'
 
 # MISC {{{
 alias activate='source .venv/bin/activate' # alias for activating venv
+alias venv='python3 -m venv .venv'
 alias utime='sudo ntpdate pool.ntp.org'
 #alias z='zoxide'
 alias python='python3'
@@ -124,8 +125,8 @@ alias casaos-disable='sudo systemctl disable casaos-app-management.service casao
 
 alias tunnel='screen -r playit.gg'
 alias awake-server='wakeonlan $(cat ~/.serverMAC)'
-#alias mountdir='sudo mount -t nfs4 10.8.0.1:/media/nfs /media/share'
-alias mountdirs='sudo mount -a'
+alias mountdir='sudo mount -t nfs4 10.8.0.1:/media/nfs /media/share'
+#alias mountdirs='sudo mount -a'
 #}}}
 
 # MISSPELLINGS {{{
