@@ -110,6 +110,8 @@ alias jupyter-tunnel='ssh -L 8888:localhost:8888 nicomr@taigete-tunnel'
 alias mongosh-docker='mongosh --port 27017'
 alias listen='sudo lsof -i -P -n | grep LISTEN'
 alias public-ip='curl ifconfig.me && echo'
+alias wg-up='sudo wg-quick up wg0'
+alias wg-down='sudo wg-quick down wg0'
 #}}}
 
 # SERVER {{{
