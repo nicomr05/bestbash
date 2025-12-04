@@ -115,7 +115,11 @@ alias wg-down='sudo wg-quick down wg0'
 #}}}
 
 # SERVER {{{
-alias underleaf-backup='sudo cp -r /home/nicomr/redis_data/ /home/nicomr/sharelatex_data/ /home/nicomr/mongo_data/ /mnt/disk1/'
+alias overleaf-backup='sudo cp -r /home/nicomr/redis_data/ /home/nicomr/sharelatex_data/ /home/nicomr/mongo_data/ /mnt/disk1/'
+alias tunnel='screen -r playit.gg'
+alias awake-server='wakeonlan $(cat ~/.serverMAC)'
+alias aa2='z aa2 && activate'
+
 alias crafty-backup='sudo cp -r /DATA/AppData/crafty/backups/* /mnt/disk1/crafty/backups'
 alias crafty-optimize='sudo cp -r /home/nicomr/crafty/purpur/* .'
 
@@ -125,9 +129,10 @@ alias casaos-stop='sudo systemctl stop casaos-app-management.service casaos-loca
 alias casaos-enable='sudo systemctl enable casaos-app-management.service casaos-local-storage.service casaos-user-service.service casaos-gateway.service casaos-message-bus.service && sudo systemctl enable casaos'
 alias casaos-disable='sudo systemctl disable casaos-app-management.service casaos-local-storage.service casaos-user-service.service casaos-gateway.service casaos-message-bus.service && sudo systemctl disable casaos'
 
-alias tunnel='screen -r playit.gg'
-alias awake-server='wakeonlan $(cat ~/.serverMAC)'
+alias mountdisk='sudo mount /dev/sdb1 /mnt/disk1'
+alias umountdisk='sudo umount /mnt/disk1'
 alias mountdir='sudo mount -t nfs4 10.8.0.1:/media/nfs /media/share'
+alias umountdir='sudo umount /media/share'
 #alias mountdirs='sudo mount -a'
 #}}}
 
