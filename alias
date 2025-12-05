@@ -116,7 +116,7 @@ alias wg-down='sudo wg-quick down wg0'
 #}}}
 
 # SERVER {{{
-alias overleaf-backup='sudo cp -r /home/nicomr/redis_data/ /home/nicomr/sharelatex_data/ /home/nicomr/mongo_data/ /mnt/disk1/'
+alias underleaf-backup='sudo cp -r /home/nicomr/redis_data/ /home/nicomr/sharelatex_data/ /home/nicomr/mongo_data/ /mnt/disk1/'
 alias tunnel='screen -r playit.gg'
 alias awake-server='wakeonlan $(cat ~/.serverMAC)'
 alias aa2='z aa2 && activate'
