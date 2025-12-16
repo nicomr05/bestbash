@@ -130,8 +130,8 @@ alias casaos-stop='sudo systemctl stop casaos-app-management.service casaos-loca
 alias casaos-enable='sudo systemctl enable casaos-app-management.service casaos-local-storage.service casaos-user-service.service casaos-gateway.service casaos-message-bus.service && sudo systemctl enable casaos'
 alias casaos-disable='sudo systemctl disable casaos-app-management.service casaos-local-storage.service casaos-user-service.service casaos-gateway.service casaos-message-bus.service && sudo systemctl disable casaos'
 
-alias mountdisk='sudo mount /dev/sdb1 /mnt/disk1'
-alias umountdisk='sudo umount /mnt/disk1'
+#alias mountdisk='sudo mount /dev/sdb /mnt/disk1'
+#alias umountdisk='sudo umount /mnt/disk1'
 alias mountdir='sudo mount -t nfs4 10.8.0.1:/media/nfs /media/share'
 alias umountdir='sudo umount /media/share'
 #alias mountdirs='sudo mount -a'
