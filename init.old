@@ -81,9 +81,12 @@ parse_git_branch() {
 #unset color_prompt force_color_prompt
 
 if [ "$color_prompt" = yes ]; then
-    export PS1="$GY[$Y\u$GY@$P\h$GY:$B\w\$(__git_ps1 \"$GY|$LB%s\")$GY]$W\$ "
+#    export PS1="$GY[$Y\u$GY@$P\h$GY:$B\w\$(__git_ps1 \"$GY|$LB%s\")$GY]$W\$ "
+#else
+#    export PS1="$GY[$Y\u$GY@$P\h$GY:$B\w$GY]$W\$ "
+    export PS1="$GY[$R\u$GY@$R\h$GY:$B\w\$(__git_ps1 \"$GY|$LB%s\")$GY]$W\$ "
 else
-    export PS1="$GY[$Y\u$GY@$P\h$GY:$B\w$GY]$W\$ "
+    export PS1="$GY[$R\u$GY@$R\h$GY:$B\w$GY]$W\$ "
 fi
 unset color_prompt force_color_prompt
 
