@@ -57,6 +57,10 @@ fi
 export PATH=/usr/local/texlive/2025/bin/x86_64-linux:$PATH
 export MANPATH=/usr/local/texlive/2025/texmf-dist/doc/man:$MANPATH
 export INFOPATH=/usr/local/texlive/2025/texmf-dist/doc/info:$INFOPATH
+
+# UV
+export PATH="/home/nicomr/.local/bin:$PATH"
+
 # RUBY {{{
 #if which ruby &>/dev/null; then
 # GEM_DIR=$(ruby -rubygems -e 'puts Gem.user_dir')/bin
