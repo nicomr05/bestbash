@@ -122,6 +122,7 @@ alias underleaf-backup='sudo cp -r /home/nicomr/redis_data/ /home/nicomr/sharela
 alias tunnel='screen -r playit.gg'
 alias awake-server='wakeonlan $(cat ~/.serverMAC)'
 alias aa2='z aa2 && activate'
+alias aa3='z aa3 && activate'
 
 alias crafty-backup='sudo cp -r /DATA/AppData/crafty/backups/* /mnt/disk1/crafty/backups'
 alias crafty-optimize='sudo cp -r /home/nicomr/crafty/purpur/* .'
