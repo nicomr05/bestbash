@@ -30,23 +30,23 @@ shopt -s no_empty_cmd_completion # No empty completion
 bind 'set completion-ignore-case on'
 complete -cf sudo
 if [[ -f /etc/bash_completion ]]; then
-  . /etc/bash_completion
+  source /etc/bash_completion
 fi
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
+    source /usr/share/bash-completion/bash_completion
   elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
+    source /etc/bash_completion
   fi
 fi
 #}}}
 
 # ZOXIDE
 if [ -f ~/.zoxiderc ]; then
-  . ~/.zoxiderc
+  source ~/.zoxiderc
 fi
 
 # CONFIG {{{
@@ -54,6 +54,12 @@ export PATH=/usr/local/bin:$PATH
 if [[ -d "$HOME/bin" ]] ; then
   PATH="$HOME/bin:$PATH"
 fi
+
+# source .secrets
+if [ -f ~/.secrets ]; then
+  source ~/.secrets
+fi
+
 export PATH=/usr/local/texlive/2025/bin/x86_64-linux:$PATH
 export MANPATH=/usr/local/texlive/2025/texmf-dist/doc/man:$MANPATH
 export INFOPATH=/usr/local/texlive/2025/texmf-dist/doc/info:$INFOPATH
@@ -81,7 +87,7 @@ fi
 #}}}
 # VTE {{{
 if [[ -f "/etc/profile.d/vte.sh" ]]; then
-  . /etc/profile.d/vte.sh
+  source /etc/profile.d/vte.sh
 fi
 #}}}
 # ANDROID SDK {{{
