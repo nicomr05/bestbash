@@ -47,7 +47,6 @@ alias .aliases="nvim ~/.bash_aliases"
 alias vimconf="nvim ~/.config/nvim/init.lua"
 alias dwmconf="nvim ~/.config/dwm/config.def.h"
 alias stconf="nvim ~/.config/st/config.h"
-alias bat='batcat'
 alias rsync='rsync --progress'
 #}}}
 

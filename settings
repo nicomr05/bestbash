@@ -64,6 +64,9 @@ export PATH=/usr/local/texlive/2025/bin/x86_64-linux:$PATH
 export MANPATH=/usr/local/texlive/2025/texmf-dist/doc/man:$MANPATH
 export INFOPATH=/usr/local/texlive/2025/texmf-dist/doc/info:$INFOPATH
 
+export PATH=${PATH}:/usr/local/cuda
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda
+
 # UV
 export PATH="/home/nicomr/.local/bin:$PATH"
 
