@@ -106,6 +106,7 @@ alias venv='python3 -m venv .venv'
 alias utime='sudo ntpdate pool.ntp.org'
 #alias z='zoxide'
 alias python='python3'
+alias uv-run-notebook="uv run --with jupyter jupyter notebook"
 alias jp2a='jp2a --color'
 alias kvm-unload='lsmod | grep kvm && sudo rmmod kvm_intel && sudo rmmod kvm'
 alias jupyter-tunnel='ssh -L 8888:localhost:8888 nicomr@taigete-tunnel'
