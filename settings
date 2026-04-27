@@ -65,10 +65,14 @@ export MANPATH=/usr/local/texlive/2025/texmf-dist/doc/man:$MANPATH
 export INFOPATH=/usr/local/texlive/2025/texmf-dist/doc/info:$INFOPATH
 
 export PATH=${PATH}:/usr/local/cuda
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/opt/cuda/lib64
 
 # UV
 export PATH="/home/nicomr/.local/bin:$PATH"
+
+# PSP
+# export PSPDEV=/usr/local/pspdev
+# export PATH=$PATH:$PSPDEV/bin
 
 # RUBY {{{
 #if which ruby &>/dev/null; then
