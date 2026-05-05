@@ -4,6 +4,6 @@ source ~/.bash/colors
 source ~/.bash/settings
 source ~/.bash/alias
 source ~/.bash/functions
-source ~/.bash/gpu_numa_fix
+#source ~/.bash/gpu_numa_fix
 
 #fastfetch
