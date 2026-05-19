@@ -41,6 +41,7 @@ alias nano='nano -w -_'
 #alias fastfetch='fastfetch --logo HarDClanZ'
 alias c='clear'
 alias cl='clear && l'
+alias v='nvim'
 alias .bashrc="nvim ~/.bashrc"
 alias .aliases="nvim ~/.bash_aliases"
 #alias vimconf="cd ~/.config/nvim && nvim init.lua"
