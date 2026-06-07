@@ -93,12 +93,20 @@ fi
 #}}}
 
 # LS {{{
-alias ls='ls -hF --color=auto'
-alias lr='ls -R'                    # recursive ls
-alias lm='la | bat'
-alias ll='ls -lA'
-alias la='ls -A'
-alias l='ls -l'
+# Aliases sin eza
+# alias ls='ls -hF --color=auto'
+# alias lr='ls -R'                    # recursive ls
+# alias lm='la | bat'
+# alias ll='ls -lA'
+# alias la='ls -A'
+# alias l='ls -l'
+
+# Aliases con eza
+alias ls='eza --icons'
+alias l='eza -l --icons --git --color-scale all'
+alias ll='eza -lA --icons --git --color-scale all'
+alias la='eza -A --icons --git'
+alias tree='eza --icons --tree --git'
 #}}}
 
 # MISC {{{
