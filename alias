@@ -23,9 +23,6 @@ alias ip='ip -c'
 #}}}
 
 # MODIFIED COMMANDS {{{
-alias ..='echo "cd .."; cd ..'
-alias ....='echo "cd ../.."; cd ../..'
-alias ......='echo "cd ../../.."; cd ../../..'
 alias hl='rg --passthru'
 alias fman='compgen -c | fzf | xargs man'
 alias open='xdg-open'
@@ -43,6 +40,7 @@ alias c='clear'
 alias cl='clear && l'
 alias v='nvim'
 alias .bashrc="nvim ~/.bashrc"
+alias .zshrc="nvim ~/.zshrc"
 alias .aliases="nvim ~/.bash_aliases"
 #alias vimconf="cd ~/.config/nvim && nvim init.lua"
 alias vimconf="nvim ~/.config/nvim/init.lua"
@@ -107,6 +105,8 @@ alias l='eza -l --icons --git --color-scale all'
 alias ll='eza -lA --icons --git --color-scale all'
 alias la='eza -A --icons --git'
 alias tree='eza --icons --tree --git'
+alias lr='eza --recurse'                    # recursive ls
+alias lm='la | bat'
 #}}}
 
 # MISC {{{

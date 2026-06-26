@@ -16,10 +16,13 @@ if $_isxrunning; then
   PP='\[\e[1;38;5;93m\]'
   R='\[\e[1;38;5;196m\]'
   Y='\[\e[1;38;5;214m\]'
+  O='\e[38;5;202m\]'        # naranja-rojo, más oscuro
+  # O='\[\e[38;5;208m\]'    # naranja intenso
+  # O='\e[38;5;214m\]'      # naranja más claro/dorado
   W='\[\e[0m\]'
 
   get_prompt_symbol() {
-    [[ $UID == 0 ]] && echo "#" || echo "\$"
+    [[ $UID == 0 ]] && echo "#" || echo "λ"
   }
 
   if [[ $PS1 && -f /usr/share/git/git-prompt.sh ]]; then
@@ -30,12 +33,20 @@ if $_isxrunning; then
     export GIT_PS1_SHOWSTASHSTATE=1
     export GIT_PS1_SHOWUNTRACKEDFILES=0
 
-    export PS1="$GY[$W\u@\h$GY:$B\w\$(__git_ps1 \"$GY|$LB%s\")$GY]$W\$(get_prompt_symbol) "
-  else
-    export PS1="$GY[$W\u@\h$GY:$B\w$W]\$(get_prompt_symbol) "
+  export PS1="\u@\h $B\w\$(__git_ps1 \"$GY|$LB%s\")$W $O\$(get_prompt_symbol) $W"
+else
+  export PS1="\u@\h $B\w$W $O\$(get_prompt_symbol) $W"
+
+# v2
+#   export PS1="$GY[$W\u@\h$GY:$B\w\$(__git_ps1 \"$GY|$LB%s\")$GY]$W\$(get_prompt_symbol) "
+# else
+#   export PS1="$GY[$W\u@\h$GY:$B\w$W]\$(get_prompt_symbol) "
+
+# v1
 #    export PS1="$GY[$Y\u$GY@$P\h$GY:$B\w\$(__git_ps1 \"$GY|$LB%s\")$GY]$W\$(get_prompt_symbol) "
 #  else
 #    export PS1="$GY[$Y\u$GY@$P\h$GY:$B\w$GY]$W\$(get_prompt_symbol) "
+
   fi
 else
   export TERM='xterm-color'
