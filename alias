@@ -10,6 +10,12 @@ if which hub &>/dev/null; then
 fi
 #}}}
 
+# CD {{{
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+# }}}
+
 # AUTOCOLOR {{{
 alias ls='ls --color=auto'
 alias dir='dir --color=auto'
