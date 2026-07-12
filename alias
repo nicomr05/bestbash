@@ -107,8 +107,8 @@ fi
 
 # Aliases con eza
 alias ls='eza --icons'
-alias l='eza -l --icons --git --color-scale all'
-alias ll='eza -lA --icons --git --color-scale all'
+alias l='eza -l --color-scale all --icons --git'
+alias ll='eza -lA --color-scale all --icons --git'
 alias la='eza -A --icons --git'
 alias tree='eza --icons --tree --git'
 alias lr='eza --recurse'                    # recursive ls
