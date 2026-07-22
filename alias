@@ -134,16 +134,17 @@ alias sql='sudo su - postgres'
 #}}}
 
 # SERVER {{{
-alias underleaf-backup='sudo rsync --progress --recursive /home/nicomr/redis_data/ /home/nicomr/sharelatex_data/ /home/nicomr/mongo_data/ /mnt/disk1/'
+alias backup='sudo rsync --progress --recursive --perms'
+alias underleaf-backup='backup /home/nicomr/redis_data/ /mnt/disk1/redis_data/ && backup /home/nicomr/sharelatex_data/ /mnt/disk1/sharelatex_data/ && backup /home/nicomr/mongo_data/ /mnt/disk1/mongo_data/'
 alias tunnel='screen -r playit.gg'
 alias awake-server='wakeonlan $(cat ~/.serverMAC)'
 alias aa2='z aa2 && activate'
 alias aa3='z aa3 && activate'
 
-alias jellyfin-backup='sudo rsync --progress --recursive /DATA/Media/* /mnt/disk1/jellyfin'
+alias jellyfin-backup='backup /DATA/Media/* /mnt/disk1/jellyfin'
 
-alias crafty-backup='sudo rsync --progress --recursive /DATA/AppData/crafty/backups/* /mnt/disk1/crafty/backups'
-alias crafty-optimize='sudo rsync --progress --recursive /home/nicomr/crafty/purpur/* .'
+alias crafty-backup='backup /DATA/AppData/crafty/backups/* /mnt/disk1/crafty/backups'
+alias crafty-optimize='backup /home/nicomr/crafty/purpur/* .'
 
 alias casaos-update='curl -fsSL https://get.casaos.io/update | sudo bash'
 alias casaos-start='sudo systemctl start casaos-app-management.service casaos-local-storage.service casaos-user-service.service casaos-gateway.service casaos-message-bus.service && sudo systemctl start casaos'
