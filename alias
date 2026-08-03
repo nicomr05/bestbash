@@ -106,7 +106,7 @@ fi
 # alias l='ls -l'
 
 # Aliases con eza
-alias ls='eza --icons'
+alias ls='eza --icons always'
 alias l='eza -l --color-scale all --icons --git'
 alias ll='eza -lA --color-scale all --icons --git'
 alias la='eza -A --icons --git'
