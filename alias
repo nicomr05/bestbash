@@ -134,7 +134,7 @@ alias sql='sudo su - postgres'
 #}}}
 
 # SERVER {{{
-alias backup='sudo rsync --progress --recursive --perms'
+alias backup='sudo rsync --progress --recursive --perms --update'
 alias underleaf-backup='backup /home/nicomr/redis_data/ /mnt/disk1/redis_data/ && backup /home/nicomr/sharelatex_data/ /mnt/disk1/sharelatex_data/ && backup /home/nicomr/mongo_data/ /mnt/disk1/mongo_data/'
 alias tunnel='screen -r playit.gg'
 alias awake-server='wakeonlan $(cat ~/.serverMAC)'
