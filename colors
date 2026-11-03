@@ -16,7 +16,7 @@ if $_isxrunning; then
   PP='\[\e[1;38;5;93m\]'
   R='\[\e[1;38;5;196m\]'
   Y='\[\e[1;38;5;214m\]'
-  O='\e[38;5;202m\]'        # naranja-rojo, más oscuro
+  O='\[\e[38;5;202m\]'
   # O='\[\e[38;5;208m\]'    # naranja intenso
   # O='\e[38;5;214m\]'      # naranja más claro/dorado
   W='\[\e[0m\]'
